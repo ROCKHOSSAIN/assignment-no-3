@@ -19,6 +19,9 @@
     tailwind.config = {
       theme: {
         extend: {
+          colors:{
+                  'red-bg': '#F85559',
+          },
           backgroundImage: {
            
             'team-bg': "url('./images/team.png')",
@@ -40,7 +43,7 @@
 </head>
 <body class="Lato">
     <!-- <header class="max-w-screen-xl mx-auto my-10 py-5 px-8 md:px-16 lg:px-1"> -->
-      <header class="bg-red-500 h-24">
+      <!-- <header class="bg-red-500 h-24">
         <div class="navbar container mx-auto flex items-center justify-between">
           <div class="navbar-start hidden lg:flex space-x-4">
             <ul class="menu menu-horizontal px-1">
@@ -77,7 +80,56 @@
             </ul>
           </div>
         </div>
-      </header>
+      </header> -->
+
+      <header class="container mx-auto lg:py-4 ">
+         
+          
+        <!-- nav section -->
+        <nav class=" mr-6 lg:mr-0">
+         <div class="navbar md:bg-red-bg rounded-full  lg:px-10 my-4 mx-5 lg:mx-auto  lg:py-5">
+              <!-- start -->
+              <div class="navbar-start md:gap-2 lg:gap-5 text- lg:text-base font-medium hidden lg:flex text-white">
+                   <a href="">Home</a>
+                   <a href="">About Us</a>
+                   <a href="">Shop</a>
+                   <a href="">All Fruits</a>
+              </div>
+              <!-- mid -->
+              <div class="navbar-center md:grow gap-1 ">
+                   <img class="w-10 lg:w-auto" src="./images/logo.png" alt="">
+                   <h3 class="text-4xl lg:text-5xl font-bold lg:font-extrabold lg:text-white">Fruit Burst</h3>
+              </div>
+              <!-- end  -->
+              <div class="navbar-end hidden lg:flex">
+                <div class="relative flex items-center">
+                   <input type="text" placeholder="Search here" class="input rounded-full px-10"/>
+                   <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 absolute right-2 mr-4 " fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                   </svg> 
+                                    
+                </div>
+                                                              
+              </div>
+              <!-- nav-for-mobile -->
+              <div class="navbar-end md:mr-4 lg:hidden">
+                      <div class="dropdown dropdown-end">
+                             <div class="dropdown dropdown-hover">
+                                  <label tabindex="0" class=""><i class="fa-solid fa-list-ul fa-xl" style="color: #0f0f0f;"></i></label>
+                                  <ul tabindex="0" class="text-purple-800 space-y-1 bg-lime-100 dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-32">
+                                       <a href="">Home</a>
+                                       <a href="">About Us</a>
+                                       <a href="">Shop</a>
+                                       <a href="">All Fruits</a>
+                                  </ul>
+                                </div>
+                        </ul>
+                      </div>
+              </div>
+              <!--end of nav-for-mobile -->
+              
+            </div>
+        </nav>
+      </header>    
         
     <main class="container mx-auto mt-12">
         
@@ -194,8 +246,9 @@
 
             <div class="card w-96 bg-base-100 shadow-xl mt-24 bg-white">
                 <figure><img src="images/fruit6.png" alt="Shoes" class="mb-9" /></figure>
-                <div class="card-body ">
-                  <h2 class=" text-center text-2xl font-extralight mb-8">12.90$ - 18.85$</h2>
+                <div class="card-body">
+                  <h2 class=" text-center text-2xl font-bold mb-8">12.90$ - 18.85$</h2>
+                  <hr class="border-1 border-gray-400 mx-auto w-48 lg:w-60 mb-5">
                   <p class="text-center mb-6">Apples</p>
                   <div class="rating rating-lg rating-half w-28 mx-auto ">
                     <input type="radio" name="rating-9" class="rating-hidden" />
@@ -250,7 +303,8 @@
               <div class="card w-96 bg-base-100 shadow-xl mt-24 bg-white">
                 <figure><img src="images/fruit7.png" alt="Shoes" class="mb-9" /></figure>
                 <div class="card-body ">
-                  <h2 class=" text-center text-2xl font-extralight mb-8">12.90$ - 18.85$</h2>
+                  <h2 class=" text-center text-2xl font-bold mb-8">12.90$ - 18.85$</h2>
+                  <hr class="border-1 border-gray-400 mx-auto w-48 lg:w-60 mb-5">
                   <p class="text-center mb-6">Apples</p>
                   <div class="rating rating-lg rating-half w-28 mx-auto ">
                     <input type="radio" name="rating-10" class="rating-hidden" />
@@ -304,7 +358,8 @@
 <div class="card w-96 bg-base-100 shadow-xl mt-24 bg-white">
     <figure><img src="images/fruit8.png" alt="Shoes" class="mb-9" /></figure>
     <div class="card-body ">
-      <h2 class=" text-center text-2xl font-extralight mb-8">12.90$ - 18.85$</h2>
+      <h2 class=" text-center text-2xl font-bold mb-8">12.90$ - 18.85$</h2>
+      <hr class="border-1 border-gray-400 mx-auto w-48 lg:w-60 mb-5">
       <p class="text-center mb-6">Apples</p>
       <div class="rating rating-lg rating-half w-28 mx-auto ">
         <input type="radio" name="rating-11" class="rating-hidden" />
@@ -360,7 +415,8 @@
 <div class="card w-96 bg-base-100 shadow-xl mt-24 bg-white">
     <figure><img src="images/fruit9.png" alt="Shoes" class="mb-9" /></figure>
     <div class="card-body ">
-      <h2 class=" text-center text-2xl font-extralight mb-8">12.90$ - 18.85$</h2>
+      <h2 class=" text-center text-2xl font-bold mb-8">12.90$ - 18.85$</h2>
+      <hr class="border-1 border-gray-400 mx-auto w-48 lg:w-60 mb-5">
       <p class="text-center mb-6">Apples</p>
       <div class="rating rating-lg rating-half w-28 mx-auto ">
         <input type="radio" name="rating-12" class="rating-hidden" />
@@ -419,7 +475,7 @@
 <!-- team section  -->
 <section class="bg-gradient bg-gray-500">
     <div class="h-auto lg:h-[690px] mt-10 " style="background-image:url('images/team.png');background-repeat: no-repeat; background-size: cover; mix-blend-mode: overlay;">
-          <div class="text-center text-white lg:flex-row items-center lg:pt-28">
+          <div class="text-center text-white lg:flex-row items-center pt-20 md:pt-24 lg:pt-28">
             <h1 class="mb-5 text-5xl font-extrabold">Meet the team section</h1>
             <p class="mb-5 text-base font-medium">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br>
                 Latin literature from 45 BC, making it over 2000 years old.</p>
@@ -458,7 +514,7 @@
                 <i class="fa-brands fa-linkedin text-[#F85559] rounded-full"></i>
                     </div>
             </div>
-            <div class="text-center text-white pb-1">
+            <div class="text-center text-white pb-20 lg:pb-0">
                 <img src="images/member4.png" class="mx-auto mb-8" alt="">
                 <h1 class="text-2xl font-medium">Chaity</h1>
                 <p class="text-base mb-3">Fruits Expert</p>
@@ -570,7 +626,7 @@
           <img src="images/logo.png" alt="">
           <h1 class="text-3xl lg:text-5xl  lg:text-white">Fruit Burst</h1>
         </div>
-        <div class="flex flex-wrap justify-center lg:flex-row gap-4 ">
+        <div class="flex flex-wrap justify-center lg:flex-row gap-5 md:gap-5 lg:gap-6 ">
           <a class="link text-sm no-underline">Home</a> 
           <a class="link text-sm no-underline">About us</a> 
           <a class="link text-sm no-underline">Shop</a> 
